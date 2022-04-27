@@ -14,19 +14,19 @@
     </script>
 </head>
 <body>
-<span>회원 번호 : </span><input type="text" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;"
+<span>회원 번호 : </span><input type="text" readonly style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;"
 id="uid1" 
 value="B68EAF37466D4F0AB8933D366B69FC90"> 금발
 <button onclick="req1();">쿠폰 사용</button>
 <br>
 <br>
-<span>회원 번호 : </span><input type="text" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;"
+<span>회원 번호 : </span><input type="text" readonly style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;"
 id="uid2" 
 value="F4B89607F19A43FBB3D0E4D8D63E2F16"> 탕경
 <button onclick="req2();">쿠폰 사용</button>
 <br>
 <br>
-<span>회원 번호 : </span><input type="text" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;"
+<span>회원 번호 : </span><input type="text" readonly style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;"
 id="uid3" 
 value="565C84A57CF04FF08797A9798E817209"> 우현보안관
 <button onclick="req3();">쿠폰 사용</button>
@@ -164,7 +164,11 @@ value="565C84A57CF04FF08797A9798E817209"> 우현보안관
                 }
             })
         }
-    }
+setTimeout(function() {
+alert("보상받고 5초 후 새로고침합니다.");
+location.reload(); }, 5000);
+    } 
+
 
     function req2() {
         var uid2 = $('#uid2').val()
@@ -199,6 +203,9 @@ value="565C84A57CF04FF08797A9798E817209"> 우현보안관
                 }
             })
         }
+setTimeout(function() {
+alert("보상받고 5초 후 새로고침합니다.");
+location.reload(); }, 5000);
     }
 
     function req3() {
@@ -234,6 +241,9 @@ value="565C84A57CF04FF08797A9798E817209"> 우현보안관
                 }
             })
         }
+setTimeout(function() {
+alert("보상받고 5초 후 새로고침합니다.");
+location.reload(); }, 5000);
     }
 
 
